@@ -1,0 +1,27 @@
+th {
+  color: var(--special-hover-color);
+}
+.active {
+  color: var(--special-color);
+}
+.wrapperSort {
+  gap: 0.3rem;
+  .sort {
+    all: unset;
+    cursor: pointer;
+
+    &:hover {
+      background-color: transparent;
+    }
+  }
+  .icon {
+    stroke: var(--special-hover-color);
+    transition: transform 0.2s ease-in-out;
+  }
+  .iconActive {
+    stroke: var(--active-color);
+  }
+  .iconAsc {
+    transform: rotate(180deg);
+  }
+}

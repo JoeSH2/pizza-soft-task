@@ -1,0 +1,11 @@
+.Container {
+  display: block;
+  max-width: 1180px;
+  width: 100%;
+  margin: 0 auto;
+  padding: 0 15px;
+
+  @media screen and (max-width: 430px) {
+    max-width: 380px;
+  }
+}

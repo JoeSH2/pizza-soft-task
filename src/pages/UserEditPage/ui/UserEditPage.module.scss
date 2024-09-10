@@ -1,0 +1,32 @@
+.UserEditPage {
+  width: 100%;
+}
+.title {
+  position: relative;
+  font-size: var(--font-XL);
+  margin-bottom: 4rem;
+
+  &::before {
+    position: absolute;
+    content: '';
+    bottom: -2rem;
+    left: 50%;
+    height: 2px;
+    width: 50%;
+    background-color: var(--active-color);
+    transform: translate(-50%, 50%);
+  }
+}
+.wrapper {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  margin-top: 4rem;
+}
+
+@media (max-width: 930px) {
+  .title {
+    font-size: var(--font-XL-mobile);
+    text-align: center;
+  }
+}

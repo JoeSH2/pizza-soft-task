@@ -1,0 +1,96 @@
+.table {
+  width: 100%;
+  border-collapse: collapse;
+  color: var(--text-color);
+  background-color: var(--main-color);
+  box-shadow: var(--box-shadow);
+  border-radius: 8px;
+  overflow: hidden;
+  font-size: var(--font-M);
+}
+
+.table th {
+  background-color: var(--secondary-color);
+  color: var(--special-hover-color);
+  padding: 16px 15px;
+  text-align: left;
+  border-bottom: 2px solid var(--special-border-color);
+  text-transform: uppercase;
+}
+
+.table th,
+.table td {
+  width: fit-content;
+}
+
+.list td {
+  padding: 12px 15px;
+  border-bottom: 1px solid var(--secondary-color);
+  text-align: left;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+
+.list tr {
+  transition:
+    background-color 0.2s ease,
+    color 0.2s ease;
+  color: var(--text-secondary-color);
+}
+
+.list tr:last-child td {
+  border-bottom: none;
+}
+
+.list tr:nth-child(even) {
+  background-color: var(--secondary-color);
+}
+
+.list tr:hover {
+  background-color: var(--special-hover-color);
+  color: var(--text-color);
+}
+
+.tdBirthday,
+.tdRole,
+.tdArchive,
+.tdEdit {
+  text-align: center;
+}
+.archive {
+  color: var(--disabled-color);
+}
+@media (max-width: 930px) {
+  .table {
+    display: block;
+    font-size: var(--font-M-mobile);
+    thead {
+      display: grid;
+      th {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        width: 100%;
+      }
+    }
+  }
+  .list {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    tr {
+      display: grid;
+      border: 1px solid var(--disabled-color);
+      td {
+        width: 100%;
+        text-align: center;
+        border: none;
+      }
+    }
+  }
+}
+@media (max-width: 374px) {
+  .list {
+    grid-template-columns: auto;
+  }
+}

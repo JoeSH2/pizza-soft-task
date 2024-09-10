@@ -1,0 +1,32 @@
+.Header {
+  display: block;
+  position: sticky;
+  top: 0;
+  z-index: var(--z-level-2);
+  background-color: var(--main-color);
+}
+.wrapper {
+  height: var(--heigth-header);
+  border-bottom: solid 2px var(--secondary-color);
+
+  .logo {
+    fill: var(--special-hover-color);
+    stroke: var(--special-hover-color);
+  }
+  .title {
+    text-transform: uppercase;
+    color: var(--special-color);
+    font-size: var(--font-LOGO);
+    font-weight: 700;
+    margin-left: 10px;
+  }
+}
+
+@media (max-width: 930px) {
+  .profile {
+    font-size: var(--font-M-mobile);
+  }
+  .title {
+    display: none;
+  }
+}

@@ -1,0 +1,44 @@
+.UserCreatePage {
+  width: 100%;
+}
+.titleWrapper {
+  position: relative;
+  gap: 1rem;
+  margin-bottom: 5rem;
+
+  h3 {
+    font-size: var(--font-XL);
+  }
+  p {
+    color: var(--text-secondary-color);
+  }
+
+  &::before {
+    position: absolute;
+    content: '';
+    bottom: -2.5rem;
+    left: 50%;
+    height: 2px;
+    width: 50%;
+    background-color: var(--active-color);
+    transform: translate(-50%, 50%);
+  }
+}
+
+@media (max-width: 930px) {
+  .titleWrapper {
+    gap: 1rem;
+    margin-bottom: 4rem;
+    text-align: center;
+
+    h3 {
+      font-size: var(--font-XL-mobile);
+    }
+    p {
+      font-size: var(--font-M-mobile);
+    }
+    &::before {
+      bottom: -2rem;
+    }
+  }
+}

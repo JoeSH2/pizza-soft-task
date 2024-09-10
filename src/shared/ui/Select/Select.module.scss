@@ -1,0 +1,41 @@
+.wrapper {
+  width: 100%;
+  position: relative;
+}
+.Select {
+  width: 100%;
+  border: 1px solid var(--special-color);
+  border-radius: 4px;
+  padding: 6px 18px;
+  outline: none;
+  transition: background-color 0.2s ease;
+  &:focus {
+    background-color: var(--secondary-color);
+  }
+}
+.disabled {
+  background-color: var(--disabled-color);
+}
+.clearStyle {
+  all: unset;
+}
+.option {
+  background-color: var(--secondary-color);
+}
+.error {
+  position: absolute;
+  bottom: -22px;
+  left: 10px;
+  color: var(--error-color);
+  font-size: var(--font-S);
+  animation: ani forwards 0.3s;
+}
+
+@keyframes ani {
+  0% {
+    left: 0;
+  }
+  100% {
+    left: 10px;
+  }
+}

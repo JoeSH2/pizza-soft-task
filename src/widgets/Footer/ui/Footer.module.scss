@@ -1,0 +1,15 @@
+.Footer {
+  display: block;
+  margin-top: auto;
+  background-color: var(--secondary-color);
+}
+.wrapper {
+  min-height: var(--heigth-header);
+
+  .title {
+    text-transform: uppercase;
+    color: var(--special-color);
+    font-size: var(--font-LOGO);
+    font-weight: 700;
+  }
+}

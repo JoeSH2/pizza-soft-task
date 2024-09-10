@@ -1,0 +1,59 @@
+.appDark {
+  --main-color: #282c34;
+  --secondary-color: #3b4048;
+
+  --special-color: #61afef;
+  --special-hover-color: #468ebb;
+  --special-border-color: rgba(97, 175, 239, 0.4);
+
+  --active-color: #98c379;
+  --error-color: #e06c75;
+  --error-hover-color: #d14a61;
+
+  --disabled-color: rgba(255, 255, 255, 0.2);
+  --box-shadow: 0px 0px 20px 4px rgba(0, 0, 0, 0.3);
+  --box-shadow-inv: inset 6px -6px 12px 4px rgba(0, 0, 0, 0.5);
+  --box-shadow-hold: 0px 0px 20px 4px rgba(97, 175, 239, 0.3);
+  --box-shadow-risk: 0px 0px 20px 4px rgba(224, 108, 117, 0.3);
+
+  --modal-back-color: rgba(0, 0, 0, 0.85);
+  --modal-back-hover-color: rgba(0, 0, 0, 0.75);
+
+  --switcher-color: #501f6e;
+  --back-switcher-icon: #a178cc;
+
+  --text-color: #abb2bf;
+  --text-secondary-color: #a0a1a7;
+  --text-inv-color: #282c34;
+  --text-inv-secondary-color: #3b4048;
+}
+
+//.appDark {
+//  --main-color: #121212;--main-color--main-color--main-color--main-color--main-color--main-color--main-color--main-color--main-color--main-color--main-color--main-color--main-color--main-color--main-color--main-color--main-color--main-color--main-color
+//  --secondary-color: #1e1e1e;--secondary-color--secondary-color--secondary-color--secondary-color--secondary-color--secondary-color--secondary-color--secondary-color--secondary-color--secondary-color--secondary-color--secondary-color--secondary-color--secondary-color--secondary-color--secondary-color--secondary-color--secondary-color--secondary-color--secondary-color
+//
+//  --special-color: #009688;--special-color--special-color--special-color--special-color--special-color--special-color--special-color--special-color--special-color--special-color--special-color--special-color--special-color--special-color--special-color--special-color--special-color--special-color--special-color--special-color
+//  --special-hover-color: #007364;--special-hover-color--special-hover-color--special-hover-color--special-hover-color--special-hover-color--special-hover-color--special-hover-color--special-hover-color--special-hover-color--special-hover-color--special-hover-color--special-hover-color--special-hover-color--special-hover-color--special-hover-color--special-hover-color--special-hover-color--special-hover-color--special-hover-color--special-hover-color
+//  --special-border-color: rgba(0, 150, 136, 0.5);--special-border-color--special-border-color--special-border-color--special-border-color--special-border-color--special-border-color--special-border-color--special-border-color--special-border-color--special-border-color--special-border-color--special-border-color--special-border-color--special-border-color--special-border-color--special-border-color--special-border-color--special-border-color--special-border-color--special-border-color
+//
+//  --active-color: #00cbb8;--active-color--active-color--active-color--active-color--active-color--active-color--active-color--active-color--active-color--active-color--active-color--active-color--active-color--active-color--active-color--active-color--active-color--active-color--active-color--active-color
+//  --error-color: #e57373;--error-color--error-color--error-color--error-color--error-color--error-color--error-color--error-color--error-color--error-color--error-color--error-color--error-color--error-color--error-color--error-color--error-color--error-color--error-color--error-color
+//  --error-hover-color: #d32f2f;--error-hover-color--error-hover-color--error-hover-color--error-hover-color--error-hover-color--error-hover-color--error-hover-color--error-hover-color--error-hover-color--error-hover-color--error-hover-color--error-hover-color--error-hover-color--error-hover-color--error-hover-color--error-hover-color--error-hover-color--error-hover-color--error-hover-color--error-hover-color
+//
+//  --disabled-color: rgba(255, 255, 255, 0.2);--disabled-color--disabled-color--disabled-color--disabled-color--disabled-color--disabled-color--disabled-color--disabled-color--disabled-color--disabled-color--disabled-color--disabled-color--disabled-color--disabled-color--disabled-color--disabled-color--disabled-color--disabled-color--disabled-color--disabled-color
+//  --box-shadow: 0px 0px 15px 3px rgba(0, 0, 0, 0.7);--box-shadow--box-shadow--box-shadow--box-shadow--box-shadow--box-shadow--box-shadow--box-shadow--box-shadow--box-shadow--box-shadow--box-shadow--box-shadow--box-shadow--box-shadow--box-shadow--box-shadow--box-shadow--box-shadow--box-shadow
+//  --box-shadow-inv: inset 11px -11px 16px 3px rgb(56 56 56 / 40%);--box-shadow-inv--box-shadow-inv--box-shadow-inv--box-shadow-inv--box-shadow-inv--box-shadow-inv--box-shadow-inv--box-shadow-inv--box-shadow-inv--box-shadow-inv--box-shadow-inv--box-shadow-inv--box-shadow-inv--box-shadow-inv--box-shadow-inv--box-shadow-inv--box-shadow-inv--box-shadow-inv--box-shadow-inv--box-shadow-inv
+//  --box-shadow-hold: 0px 0px 15px 3px rgba(107, 164, 189, 0.7);--box-shadow-hold--box-shadow-hold--box-shadow-hold--box-shadow-hold--box-shadow-hold--box-shadow-hold--box-shadow-hold--box-shadow-hold--box-shadow-hold--box-shadow-hold--box-shadow-hold--box-shadow-hold--box-shadow-hold--box-shadow-hold--box-shadow-hold--box-shadow-hold--box-shadow-hold--box-shadow-hold--box-shadow-hold--box-shadow-hold
+//  --box-shadow-risk: 0px 0px 15px 3px rgba(154, 55, 87, 0.7);--box-shadow-risk--box-shadow-risk--box-shadow-risk--box-shadow-risk--box-shadow-risk--box-shadow-risk--box-shadow-risk--box-shadow-risk--box-shadow-risk--box-shadow-risk--box-shadow-risk--box-shadow-risk--box-shadow-risk--box-shadow-risk--box-shadow-risk--box-shadow-risk--box-shadow-risk--box-shadow-risk--box-shadow-risk--box-shadow-risk
+//
+//  --modal-back-color: rgba(112, 108, 108, 0.3);--modal-back-color--modal-back-color--modal-back-color--modal-back-color--modal-back-color--modal-back-color--modal-back-color--modal-back-color--modal-back-color--modal-back-color--modal-back-color--modal-back-color--modal-back-color--modal-back-color--modal-back-color--modal-back-color--modal-back-color--modal-back-color--modal-back-color--modal-back-color
+//  --modal-back-hover-color: rgba(112, 108, 108, 0.1);--modal-back-hover-color--modal-back-hover-color--modal-back-hover-color--modal-back-hover-color--modal-back-hover-color--modal-back-hover-color--modal-back-hover-color--modal-back-hover-color--modal-back-hover-color--modal-back-hover-color--modal-back-hover-color--modal-back-hover-color--modal-back-hover-color--modal-back-hover-color--modal-back-hover-color--modal-back-hover-color--modal-back-hover-color--modal-back-hover-color--modal-back-hover-color--modal-back-hover-color
+//
+//  --switcher-color: #64b5f6;--switcher-color--switcher-color--switcher-color--switcher-color--switcher-color--switcher-color--switcher-color--switcher-color--switcher-color--switcher-color--switcher-color--switcher-color--switcher-color--switcher-color--switcher-color--switcher-color--switcher-color--switcher-color--switcher-color--switcher-color
+//  --back-switcher-icon: #0b4757;--back-switcher-icon--back-switcher-icon--back-switcher-icon--back-switcher-icon--back-switcher-icon--back-switcher-icon--back-switcher-icon--back-switcher-icon--back-switcher-icon--back-switcher-icon--back-switcher-icon--back-switcher-icon--back-switcher-icon--back-switcher-icon--back-switcher-icon--back-switcher-icon--back-switcher-icon--back-switcher-icon--back-switcher-icon--back-switcher-icon
+//
+//  --text-color: #e0e0e0;--text-color--text-color--text-color--text-color--text-color--text-color--text-color--text-color--text-color--text-color--text-color--text-color--text-color--text-color--text-color--text-color--text-color--text-color--text-color--text-color
+//  --text-secondary-color: #b0bec5;--text-secondary-color--text-secondary-color--text-secondary-color--text-secondary-color--text-secondary-color--text-secondary-color--text-secondary-color--text-secondary-color--text-secondary-color--text-secondary-color--text-secondary-color--text-secondary-color--text-secondary-color--text-secondary-color--text-secondary-color--text-secondary-color--text-secondary-color--text-secondary-color--text-secondary-color--text-secondary-color
+//  --text-inv-color: #000000;--text-inv-color--text-inv-color--text-inv-color--text-inv-color--text-inv-color--text-inv-color--text-inv-color--text-inv-color--text-inv-color--text-inv-color--text-inv-color--text-inv-color--text-inv-color--text-inv-color--text-inv-color--text-inv-color--text-inv-color--text-inv-color--text-inv-color--text-inv-color
+//  --text-inv-secondary-color: #212121;--text-inv-secondary-color--text-inv-secondary-color--text-inv-secondary-color--text-inv-secondary-color--text-inv-secondary-color--text-inv-secondary-color--text-inv-secondary-color--text-inv-secondary-color--text-inv-secondary-color--text-inv-secondary-color--text-inv-secondary-color--text-inv-secondary-color--text-inv-secondary-color--text-inv-secondary-color--text-inv-secondary-color--text-inv-secondary-color--text-inv-secondary-color--text-inv-secondary-color--text-inv-secondary-color--text-inv-secondary-color
+//}

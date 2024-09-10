@@ -1,0 +1,39 @@
+.MainPage {
+}
+.title {
+  font-size: var(--font-XL);
+  font-weight: 600;
+  text-transform: uppercase;
+  text-align: center;
+}
+.wrapper {
+  background-color: var(--secondary-color);
+  margin: 3rem 0 1.5rem;
+  padding: 1.5rem;
+  border-radius: 1rem;
+  box-shadow: var(--box-shadow);
+}
+.row {
+  gap: 1rem;
+}
+.search {
+  width: 400px;
+}
+
+@media (max-width: 930px) {
+  .title {
+    font-size: var(--font-XL-mobile);
+  }
+  .wrapper {
+    margin: 1.5rem 0;
+    gap: 2rem;
+  }
+  .createBtn {
+    padding: 0.5rem 2rem;
+  }
+}
+@media (max-width: 500px) {
+  .wrapper {
+    flex-direction: column;
+  }
+}

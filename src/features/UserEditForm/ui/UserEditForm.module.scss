@@ -1,0 +1,149 @@
+.UserEditForm {
+  position: relative;
+  width: 600px;
+  background-color: var(--secondary-color);
+  box-shadow: var(--box-shadow);
+  border-radius: 1rem;
+  padding: 2rem;
+  @keyframes okIcon {
+    0% {
+      opacity: 0;
+    }
+    50% {
+      opacity: 1;
+    }
+    100% {
+      opacity: 0;
+      display: none;
+    }
+  }
+}
+.icon {
+  position: absolute;
+  top: 1rem;
+  right: 1rem;
+  stroke: var(--active-color);
+  animation: okIcon forwards 2s;
+  height: 42px;
+  width: 42px;
+}
+.titleRow {
+  margin-bottom: 2rem;
+  h3 {
+    font-family: var(--font-secondary);
+    font-size: var(--font-XL);
+    margin-bottom: 2rem;
+    text-align: center;
+  }
+}
+.wrapper {
+  display: grid;
+  gap: 2rem;
+  margin-bottom: 2rem;
+}
+.item {
+  display: flex;
+  align-items: flex-end;
+
+  label {
+    flex: 0 0 35%;
+    cursor: auto;
+  }
+}
+
+.formItem input[type='checkbox'] {
+  width: auto;
+  margin-right: 5px;
+}
+.formItem:last-child {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+
+  label {
+    margin: 0;
+  }
+}
+.submitBlock {
+  margin-top: 2rem;
+  gap: 1rem;
+  .cancelBtn {
+    background-color: var(--error-color);
+
+    &:hover {
+      background-color: var(--error-hover-color);
+    }
+  }
+
+  span {
+    color: var(--active-color);
+    font-size: var(--font-S);
+  }
+}
+.input {
+  width: 100%;
+  font-family: var(--font-secondary);
+  justify-content: start;
+  padding: 10px 10px 2px 10px;
+  box-sizing: border-box;
+  &:focus {
+    background-color: var(--main-color);
+  }
+  border-bottom: 1px solid var(--special-color);
+}
+.wrapperInput {
+  width: 100%;
+  position: relative;
+}
+.error {
+  position: absolute;
+  bottom: -22px;
+  left: 10px;
+  color: var(--error-color);
+  font-size: var(--font-S);
+  animation: ani forwards 0.3s;
+}
+
+@keyframes ani {
+  0% {
+    left: 0;
+  }
+  100% {
+    left: 10px;
+  }
+}
+@media (max-width: 930px) {
+  .UserEditForm {
+    font-size: var(--font-M-mobile);
+  }
+  .icon {
+    height: 28px;
+    width: 28px;
+  }
+  .wrapper {
+    gap: 1rem;
+    margin-bottom: 0.6rem;
+  }
+  .titleRow {
+    margin-bottom: 1.5rem;
+    h3 {
+      font-size: var(--font-L-mobile);
+    }
+  }
+  .item {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 4px;
+  }
+  .input {
+    border: 1px solid var(--special-color);
+    border-radius: 0.3rem;
+    padding: 0.5rem;
+  }
+}
+@media (max-width: 660px) {
+  .UserEditForm {
+    width: 100%;
+  }
+}
